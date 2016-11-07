@@ -21,6 +21,3 @@ RUN apt-get install -y curl grep sed dpkg && \
     apt-get clean
 
 ENV PATH /opt/conda/bin:$PATH
-
-ENTRYPOINT [ "/usr/bin/tini", "--" ]
-CMD [ "/bin/bash" ]
